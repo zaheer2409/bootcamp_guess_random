@@ -89,10 +89,8 @@ if __name__ == "__main__":
     while not guessed:
         user_guess = enter_your_guess()
         outcome = compare_numbers(random_number,user_guess)
+        print(determine_message(outcome))
         if outcome == 0:
-            print(determine_message(outcome))
             guessed = True
-        else:
-            print(determine_message(outcome))
 
 
